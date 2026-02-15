@@ -2,12 +2,10 @@
 
 ## Diagrama de la infraestructura
 
+### Comando para ejecutarlo en PoweShell 
+"(Invoke-WebRequest http://localhost:8080).Content -replace '.*<h1>(.*?)</h1>.*','$1'""
 ### Comando para ejecutarlo en Ubuntu    
 curl -s http://localhost:8080 | grep -oP 'Hola mundo desde server \d'
-
-### Comando para ejecutarlo en PoweShell 
-```powershell
-1..6 | % { (Invoke-WebRequest http://localhost:8080 -Headers @{ "Cache-Control"="no-cache" }).Content -replace '.*<h1>(.*?)</h1>.*','$1' }
 
 ```mermaid
 flowchart LR
