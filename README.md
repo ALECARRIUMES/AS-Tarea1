@@ -1,5 +1,4 @@
-﻿@"
-# Assignment 01 - Load Balancer (Round Robin) con Nginx + Docker Compose
+﻿# Assignment 01 - Load Balancer (Round Robin) con Nginx + Docker Compose
 
 ## Diagrama de la infraestructura
 
