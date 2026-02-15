@@ -4,6 +4,6 @@
 
 ```mermaid
 flowchart LR
-  U[Usuario / Browser / Curl] -->|http://localhost:8080| LB[Nginx Load Balancer]
-  LB --> S1[server1: Nginx (Hola mundo desde server 1)]
-  LB --> S2[server2: Nginx (Hola mundo desde server 2)]
+  U[Usuario] --> LB[Load Balancer Nginx]
+  LB --> S1[server1]
+  LB --> S2[server2]
