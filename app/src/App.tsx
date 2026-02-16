@@ -5,6 +5,10 @@ type StatKey = "STR" | "AGI" | "PER" | "VIT" | "INT";
 
 const RANKS = ["E", "D", "C", "B", "A", "S"] as const;
 
+<div className="text-xs opacity-70">
+  Rangos disponibles: {RANKS.join(" · ")}
+</div>
+
 function clamp(n: number, min: number, max: number) {
   return Math.max(min, Math.min(max, n));
 }
