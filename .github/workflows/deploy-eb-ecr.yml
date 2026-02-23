@@ -66,8 +66,10 @@ jobs:
       - name: Deploy to Elastic Beanstalk
         uses: einaregilsson/beanstalk-deploy@v21
         with:
-          region: ${{ env.AWS_REGION }}
-          application_name: ${{ env.EB_APPLICATION_NAME }}
-          environment_name: ${{ env.EB_ENVIRONMENT_NAME }}
-          version_label: "ecr-${{ github.sha }}"
-          deployment_package: deploy.zip
+              aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+              aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+              region: ${{ env.AWS_REGION }}
+              application_name: ${{ env.EB_APPLICATION_NAME }}
+              environment_name: ${{ env.EB_ENVIRONMENT_NAME }}
+              version_label: "ecr-${{ github.sha }}"
+              deployment_package: deploy.zip
