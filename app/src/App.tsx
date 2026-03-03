@@ -100,8 +100,7 @@ export default function App() {
             <span className="sl-title__sub"> — Hunter Dashboard</span>
           </h1>
           <p className="sl-subtitle">
-            Página estática (Vite + React + TS) desplegada en S3 + CloudFront.
-            Estilo “System UI”.
+            “Página estática (Vite + React + TS) dockerizada y publicada en Docker Hub. Pipeline con GitHub Actions + Doppler.”
           </p>
 
           <div className="sl-actions">
