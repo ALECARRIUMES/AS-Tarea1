@@ -18,13 +18,13 @@ const swaggerDocument = {
   },
   servers: [
     {
-      url: `http://localhost:${PORT}`
+      url: "/"
     }
   ],
   paths: {
     "/health": {
       get: {
-        summary: "Verifica que la API esté funcionando",
+        summary: "Verifica que la API estï¿½ funcionando",
         responses: {
           "200": {
             description: "API funcionando correctamente"
@@ -160,7 +160,7 @@ app.post("/api/tareas", async (req, res) => {
     if (!titulo || !titulo.trim()) {
       return res.status(400).json({
         ok: false,
-        mensaje: "El título es obligatorio"
+        mensaje: "El tï¿½tulo es obligatorio"
       });
     }
 
