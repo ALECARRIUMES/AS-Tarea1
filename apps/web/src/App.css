@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+.contenedor {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.panel {
+  width: 100%;
+  max-width: 840px;
+  background: #111827;
+  border: 1px solid #334155;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.encabezado h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+  color: #f8fafc;
+}
+
+.encabezado p {
+  margin: 0 0 24px;
+  color: #94a3b8;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.formulario input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: #e2e8f0;
+  outline: none;
+}
+
+.formulario input:focus {
+  border-color: #60a5fa;
+}
+
+.formulario button,
+.acciones button {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.formulario button {
+  background: #2563eb;
+  color: white;
+}
+
+.formulario button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.alerta {
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #fecaca;
+}
+
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tarea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  background: #0b1220;
+  margin-bottom: 12px;
+}
+
+.texto {
+  font-size: 1rem;
+  color: #e2e8f0;
+  word-break: break-word;
+}
+
+.completada {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.acciones {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.secundario {
+  background: #0ea5e9;
+  color: white;
+}
+
+.peligro {
+  background: #ef4444;
+  color: white;
+}
+
+.vacio {
+  padding: 18px;
+  text-align: center;
+  color: #94a3b8;
+  border: 1px dashed #475569;
+  border-radius: 14px;
+}
+
+@media (max-width: 700px) {
+  .formulario {
+    grid-template-columns: 1fr;
+  }
+
+  .tarea {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .acciones {
+    width: 100%;
+  }
+
+  .acciones button {
+    flex: 1;
+  }
+}
